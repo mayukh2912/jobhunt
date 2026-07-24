@@ -1,4 +1,5 @@
-const BASE = "/api/jobs";
+const API_ROOT = import.meta.env.VITE_API_URL || "";
+const BASE = `${API_ROOT}/api/jobs`;
 
 async function handle(res) {
   const data = await res.json().catch(() => ({}));
@@ -26,3 +27,4 @@ export const jobsApi = {
   toggle: (id) => fetch(`${BASE}/${id}/toggle`, { method: "PATCH" }).then(handle),
   remove: (id) => fetch(`${BASE}/${id}`, { method: "DELETE" }).then(handle),
 };
+
