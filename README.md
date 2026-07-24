@@ -45,8 +45,8 @@ npm run dev
 Runs on `http://localhost:5173` — **this is the actual page to open in your
 browser.** It proxies `/api` requests to the backend automatically.
 
-> Note for Windows PowerShell users: run each command (`cd server`, `npm
-> install`, `npm start`) on its own line rather than chaining with `&&`.
+ Note for Windows PowerShell users: run each command (`cd server`, `npm
+ install`, `npm start`) on its own line rather than chaining with `&&`.
 
 ## API endpoints
 
