@@ -58,13 +58,3 @@ browser.** It proxies `/api` requests to the backend automatically.
 | PATCH  | `/api/jobs/:id/toggle` | Activate/deactivate a job post    |
 | DELETE | `/api/jobs/:id`        | Remove a job post                 |
 
-## Notes
-
-- Toggling and deleting are optimistic in the UI (update instantly, roll
-  back on error).
-- Search re-queries the backend rather than filtering only on the client, so
-  it demonstrates the search endpoint actually working end-to-end.
-- Swapping from demo mode to real MongoDB requires no frontend changes —
-  only setting `MONGO_URI` in `server/.env`.
-- Frontend layout (logo, nav, table columns, action links, toggle, pagination)
-  was built to match the provided Figma reference.
